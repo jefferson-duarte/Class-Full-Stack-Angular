@@ -1,0 +1,14 @@
+<!-- <section class="results" *ngFor="let housingLocation of housingLocationList">
+
+  <hr>
+  {{ housingLocation.id }} : {{ housingLocation.name}}
+
+</section> -->
+
+<section class="results">
+
+  <app-housing-location *ngFor="let housingLocation of housingLocationList" [housingLocation]="housingLocation">
+
+  </app-housing-location>
+
+</section>
